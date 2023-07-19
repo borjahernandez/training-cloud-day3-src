@@ -1,0 +1,35 @@
+plugins {
+  id 'java'
+  id 'application'
+  id 'com.github.davidmc24.gradle.plugin.avro' version '1.2.0'
+}
+
+mainClassName = 'clients.Producer'
+
+sourceSets {
+  main {
+    java {
+      srcDir 'build/generated-main-avro-java'
+    }
+  }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.confluent.io/maven/" }
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+dependencies {
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.3.2'
+
+    implementation group: 'org.apache.avro', name: 'avro', version: '1.11.1'
+    implementation group: 'org.apache.avro', name: 'avro-tools', version: '1.11.1'
+    implementation group: 'io.confluent', name: 'kafka-avro-serializer', version: '7.3.2'
+
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.36'
+
+    implementation group: 'org.json', name: 'json', version: '20230227'
+}

@@ -1,0 +1,47 @@
+{
+  "namespace": "clients.avro",
+  "type": "record",
+  "name": "SensorValue",
+  "fields": [
+    {
+      "name": "vehicle_id",
+      "type": "string",
+      "default": "-1"
+    },
+    {
+      "name": "engine_temperature",
+      "type": "int",
+      "default": -1
+    },
+    {
+      "name": "average_rpm",
+      "type": "int",
+      "default": -1
+    },
+    {
+      "name": "pressure_tyre_1",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "pressure_tyre_2",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "pressure_tyre_3",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "pressure_tyre_4",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "default": -1
+    }
+  ]
+}

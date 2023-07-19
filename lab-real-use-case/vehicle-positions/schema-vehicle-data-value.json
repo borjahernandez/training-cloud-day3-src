@@ -1,0 +1,101 @@
+{
+  "properties": {
+    "ACCELERATION": {
+      "connect.index": 1,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "float64",
+          "type": "number"
+        }
+      ]
+    },
+    "DRIVER_ID": {
+      "connect.index": 4,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "int32",
+          "type": "integer"
+        }
+      ]
+    },
+    "LATITUDE": {
+      "connect.index": 2,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "float64",
+          "type": "number"
+        }
+      ]
+    },
+    "LONGITUDE": {
+      "connect.index": 3,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "float64",
+          "type": "number"
+        }
+      ]
+    },
+    "ODOMETER": {
+      "connect.index": 5,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "int32",
+          "type": "integer"
+        }
+      ]
+    },
+    "SPEED": {
+      "connect.index": 6,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "float64",
+          "type": "number"
+        }
+      ]
+    },
+    "TIMESTAMP": {
+      "connect.index": 7,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "int64",
+          "type": "integer"
+        }
+      ]
+    },
+    "VEHICLE_ID": {
+      "connect.index": 0,
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "connect.type": "int32",
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "type": "object"
+}

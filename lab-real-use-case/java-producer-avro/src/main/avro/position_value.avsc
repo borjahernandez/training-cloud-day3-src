@@ -1,0 +1,47 @@
+{
+  "namespace": "clients.avro",
+  "type": "record",
+  "name": "PositionValue",
+  "fields": [
+    {
+      "name": "vehicle_id",
+      "type": "string",
+      "default": "-1"
+    },
+    {
+      "name": "acceleration",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "latitude",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "longitude",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "driver_id",
+      "type": "string",
+      "default": "-1"
+    },
+    {
+      "name": "odometer",
+      "type": "int",
+      "default": -1
+    },
+    {
+      "name": "speed",
+      "type": "double",
+      "default": -1.0
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "default": -1
+    }
+  ]
+}
